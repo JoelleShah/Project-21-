@@ -6,6 +6,7 @@ const Body = Matter.Body;
 
 var ball
 var leftside, rightside
+var ground 
 
 function preload()
 {
@@ -17,7 +18,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	ground=new ground (width/2,670,width,20) 
+	ground = new ground (width/2,670,width,20) 
     leftSide = new ground(110,600,20,120)
 	rigthSide = new ground(600,110,20,120)
 
@@ -38,7 +39,9 @@ function draw() {
   rectMode(CENTER);
   background(0);
   
-  groundObj.display();
+  ground.display();
+  leftside.display();
+  rightside.display();
  
   drawSprites();
  
