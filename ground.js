@@ -1,7 +1,5 @@
-class Ground 
-{
-  constructor(x, y, w, h) 
-  {
+class Ground {
+  constructor(x, y, w, h) {
     let options = {
       isStatic:true
     };
