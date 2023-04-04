@@ -18,8 +18,8 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	ground = new ground (width/2,670,width,20) 
-    leftSide = new ground(110,600,20,120)
+	ground=new Ground(width/2,690,width,20)
+        leftSide = new ground(110,600,20,120)
 	rigthSide = new ground(600,110,20,120)
 
 	//Create the Bodies Here.
